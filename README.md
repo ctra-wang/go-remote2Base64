@@ -4,13 +4,13 @@ go读取远程（公有读）权限图片（腾讯云cos|阿里云oss|aws s3|等
 
 # Installation
 ```go
-go get -u github.com/Holyson/go-remote2Base64.git
+go get -u github.com/Holyson/go-remote2Base64
 ```
 # Documentation
 
 
-> GetRemoteConvertBase64() 
-> this func accpet the remote imgUrl,and used the lib "github.com/polds/imgbase64" handle the img
+> GetRemoteConvertBase64() <br/>
+> this func accpet the remote imgUrl,and used the lib "github.com/polds/imgbase64" handle the image
 
 > params：
 
@@ -19,9 +19,14 @@ go get -u github.com/Holyson/go-remote2Base64.git
 	3、imgName：the local img,if you get the remote and create the local img file.
 	4、isDelImg：if isDelImg is true,del the create image,else don`t del.
 	5、PointInfo：support to drawing the charaters on the image
-> return a base64 image string and error
- 
-# quick start!
+> return :<br/>
+> a base64 image string and error
+
+> **used the two libs:** <br/>
+> - github.com/fogleman/gg <br/>
+> - github.com/polds/imgbase64  
+
+# Quick start!
 ```go
 func TestGetRemoteConvertBase64(t *testing.T) {
 	imgUrl := "https://img-blog.csdnimg.cn/350174dad84e4ecaa0f7995207791df9.jpeg"

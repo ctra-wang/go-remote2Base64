@@ -1,4 +1,4 @@
-module github.com/holyson/go-remote2Base64.git
+module github.com/holyson/go-remote2Base64
 
 go 1.19
 
