@@ -1,6 +1,6 @@
 # go-remote2Base64
 go读取远程（公有读）权限图片（腾讯云cos|阿里云oss|aws s3|等）生成base64字符串 <br/>
-前端可以通过<img>标签直接渲染
+前端可以通过 img 标签直接渲染
 
 # Installation
 ```go
