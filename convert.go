@@ -26,6 +26,9 @@ func GetRemoteConvertBase64(imgUrl string, tff string, imgName string, isDelImg 
 	// get remote imageUrl
 	// the Problem:we can`t get the img suffix，if you want to get the img suffix,you can refer to the [convertEnhance.go]
 	img := imgbase64.FromRemote(imgUrl)
+	if len(img) <= 0 {
+		return "error", errors.New("place check your imgUrl policy is public read")
+	}
 	// use the "imgbase64" the return had a prefix,eg:"data:image/png;base64,",go we need to split the result
 	i := strings.Index(img, ",")
 	dec := base64.NewDecoder(base64.StdEncoding, strings.NewReader(img[i+1:]))
