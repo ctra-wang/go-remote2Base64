@@ -1,5 +1,5 @@
 # go-remote2Base64
-go读取远程共有读权限图片（腾讯云cos|阿里云oss|aws s3|等）生成base64字符串 <br/>
+go读取远程（公有读）权限图片（腾讯云cos|阿里云oss|aws s3|等）生成base64字符串 <br/>
 前端可以通过<img>标签直接渲染
 
 # Installation
@@ -37,7 +37,7 @@ func TestGetRemoteConvertBase64(t *testing.T) {
 ```
  
 # Test
-> base642Image web：https://www.toolnb.com/tools/base64ToImages.html
+> base642Image  web：https://www.toolnb.com/tools/base64ToImages.html
 
 before convert image url: https://img-blog.csdnimg.cn/350174dad84e4ecaa0f7995207791df9.jpeg
 
