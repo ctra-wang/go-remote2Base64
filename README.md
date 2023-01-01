@@ -35,3 +35,9 @@ func TestGetRemoteConvertBase64(t *testing.T) {
 }
 ```
  
+# Test
+> https://www.toolnb.com/tools/base64ToImages.html
+
+input the return base64Img string,we can get the image
+
+![img.png](img.png)
