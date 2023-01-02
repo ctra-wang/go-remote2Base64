@@ -6,9 +6,12 @@ go读取远程（公有读）权限图片（腾讯云cos|阿里云oss|aws s3|等
 ```go
 go get -u github.com/Holyson/go-remote2Base64
 ```
+
+# Mehtods
+> GetRemoteConvertBase64() <br/>
+> Base64StrHandler2Base64()
+
 # Documentation
-
-
 > GetRemoteConvertBase64() <br/>
 > this func accpet the remote imgUrl,and used the lib "github.com/polds/imgbase64" handle the image
 
