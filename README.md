@@ -3,8 +3,8 @@ go读取远程（公有读）权限图片（腾讯云cos|阿里云oss|aws s3|等
 前端可以通过 img 标签直接渲染
 
 # Installation
-```go
-go get -u github.com/Holyson/go-remote2Base64
+```bash
+go get -u github.com/ctra-wang/go-remote2Base64
 ```
 
 # Mehtods

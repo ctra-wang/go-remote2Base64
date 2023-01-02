@@ -47,7 +47,7 @@ func TestBase64StrHandler2Base64(t *testing.T) {
 	tff := "longshuhongheicuti.ttf"
 	imgName := "test.jpg"
 	isDelImg := true
-	str, err := Base64StrHandler2Base64(base64Str, tff, imgName, isDelImg, nil)
+	str, err := Base64StrHandler2Base64(base64Str, tff, imgName, isDelImg, nil, nil)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
