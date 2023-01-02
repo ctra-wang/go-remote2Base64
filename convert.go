@@ -96,7 +96,7 @@ func GetRemoteConvertBase64(imgUrl string, tff string, imgName string, isDelImg 
 	return str, nil
 }
 
-// Base64StrHandler2Base64 you can cache the same base64 url to redis,and other function equal the GetRemoteConvertBase64()
+// Base64StrHandler2Base64 you can cache the same base64 url to redis,and other function equals the GetRemoteConvertBase64()
 func Base64StrHandler2Base64(base64Str string, tff string, imgName string, isDelImg bool, points []*PointInfo, fontColor *RGB) (string, error) {
 
 	// use the "imgbase64" the return had a prefix,eg:"data:image/png;base64,",go we need to split the result

@@ -12,22 +12,29 @@ go get -u github.com/Holyson/go-remote2Base64
 > Base64StrHandler2Base64()
 
 # Documentation
-> GetRemoteConvertBase64() <br/>
-> this func accpet the remote imgUrl,and used the lib "github.com/polds/imgbase64" handle the image
 
-> params：
+> **used the two libs:** <br/>
+> - github.com/fogleman/gg <br/>
+> - github.com/polds/imgbase64
+
+---
+> 1、GetRemoteConvertBase64() <br/>
+
+this func accpet the remote imgUrl,and used the lib "github.com/polds/imgbase64" handle the image
+
+params：
 
 	1、imgUrl：public imgUrl  (on the web wo can open it) without credentials.
 	2、tff：if you handle the img,you can upload yourself tff.
 	3、imgName：the local img,if you get the remote and create the local img file.
 	4、isDelImg：if isDelImg is true,del the create image,else don`t del.
 	5、PointInfo：support to drawing the charaters on the image
-> return :<br/>
-> a base64 image string and error
+return :<br/>
+ a base64 image string and error
 
-> **used the two libs:** <br/>
-> - github.com/fogleman/gg <br/>
-> - github.com/polds/imgbase64  
+> 2、Base64StrHandler2Base64() <br/>
+
+you can cache the same base64 url to redis,and other function equals the GetRemoteConvertBase64()
 
 # Quick start!
 ```go
